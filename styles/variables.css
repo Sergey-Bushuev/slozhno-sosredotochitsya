@@ -18,5 +18,4 @@
   --mainTextColor:var(--pinkColor, --brownColor);
   --miniHeadersColor:var(--darkColor, --brownColor);
   --borderAndTextOpacity:var(--darkAccentOpac, --brownColorOpac);
-  --bodyColor:var(#000028, #FFF1F7);
 }

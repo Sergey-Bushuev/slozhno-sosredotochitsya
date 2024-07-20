@@ -7,9 +7,7 @@
   --mainTextColor: var(--brownColor);
   --miniHeadersColor: var(--brownColor);
   --borderAndTextOpacity: var(#35343040);
-  --bodyColor:var(#FFF1F7);
   background-image: url('../images/cover-image-light.png');
-
 }
 
 @media (prefers-color-scheme: light) {
@@ -23,12 +21,10 @@
       --miniHeadersColor: var(--brownColor);
       --borderAndTextOpacity: var(#35343040);
       --borderAndTextOpacity: var(--brownColorOpac);
-      --bodyColor:var(#000028);
   }
 
-  .page.theme_light  {
+  .page.theme_light {
       background-image: url('../images/cover-image-light.png');
-  
   }
   .rec span,
   .rec-circle {
