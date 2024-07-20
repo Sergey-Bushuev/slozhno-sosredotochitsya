@@ -1,14 +1,22 @@
-/*
-  Переменные для вашего проекта
-  и их переопределение под различные устройства
-*/
 
 :root {
-  --akcent-color: #ff0070;
-  --header-font: #db00ff;
-  --main-color: #000028;
-  --text-color: #f1b2ce;
-  --header-font-light: #ffc2e6;
-  --dark-color: #353430;
-  --pink-color:#FF8DCB;
+  --darkAccent:#ff0070;
+  --darkAccentSec:#db00ff;
+  --whiteColor:#f1b2ce;
+  --darkColor:#000028;
+  --pinkColor:#FF8DCB;
+  --brownColor:#353430;
+  --whiteLightColor:#FFF1F7;
+  --darkAccentOpac:#ff007030;
+  --brownColorOpac:#35343030;
+
+  --backgroundImage:var('./images/cover-image-dark.png', './images/cover-image-light.png');
+  --borderAndText:var(--darkAccent, --brownColor);
+  --headerColor:var(--darkAccentSec, --whiteColor);
+  --backgorundColor:var(--darkColor, --whiteLightColor);
+  --pinkShadowColor:var();
+  --squareColor:var(--darkAccent, --pinkColor);
+  --mainTextColor:var(--pinkColor, --brownColor);
+  --miniHeadersColor:var(--darkColor, --brownColor);
+  --borderAndTextOpacity:var(--darkAccentOpac, --brownColorOpac)
 }

@@ -1,77 +1,38 @@
 .page.theme_light {
-  background: #FFF1F7;
+    --backgroundImage:var('./images/cover-image-light.png');
+    --borderAndText:var(--brownColor);
+    --headerColor:var(--whiteColor);
+    --backgorundColor:var(--whiteLightColor);
+    --squareColor:var(--pinkColor);
+    --mainTextColor:var(--brownColor);
+    --miniHeadersColor:var(--brownColor);
+    --borderAndTextOpacity:var(#35343040)
 }
-
+.page.theme_light {
+  background-image: url('../images/cover-image-light.png');
+}
 .page.theme_light .rec span,
-.page.theme_light .rec .rec-circle {
+.rec-circle {
   display: none;
 }
 
-.page.theme_light .header {
-  background: url('../images/cover-image-light.png');
-  background-size: 100% 100%;
-}
-
-.page.theme_light .main__screen-header {
-  color: var(--header-font-light);
-  text-shadow: 4px 4px var(--akcent-color);
-}
-
-.page.theme_light .rec-circle__container {
-  border-top: 1px solid var(--dark-color);
-  border-right: 1px solid var(--dark-color);
-}
-
-.page.theme_light .header__theme-menu-button_active {
-  border: 1px solid var(--dark-color);
-}
-
-.page.theme_light .header__theme-menu-button {
-  color: var(--dark-color);
-}
-
-.page.theme_light .main__screen-text,
-.page.theme_light .main__header-text {
-  color: var(--dark-color);
-  background: var(--pink-color);
-}
-
-.page.theme_light .questions__list-item-header {
-  color: var(--dark-color);
-}
-
-.page.theme_light .questions__list-blocks__list-item p {
-  color: var(--dark-color)
-}
-
-.page.theme_light .main__screen-down-square {
-  border-left: 1px solid var(--dark-color);
-  border-bottom: 1px solid var(--dark-color);
-}
-
-.footer-square.top {
-  border-top: 1px solid var(--dark-color);
-  border-right: 1px solid var(--dark-color);
-}
-
-.footer-square.down {
-  border-bottom: 1px solid var(--dark-color);
-  border-left: 1px solid var(--dark-color);
-
-}
-
-.page.theme_light .header__theme-menu-button:hover {
-  outline: 1px solid #32312D40
-}
-
-.page.theme_light .header__theme-menu-button:focus {
-  border-bottom: 1px solid var(--dark-color)
-}
-
-.page.theme_light .link:hover {
-  border-bottom: 1px solid #353430;
-}
-
-.page.theme_light .link:focus {
-  outline: 1px solid #353430;
+@media (prefers-color-scheme: light) {
+  :root {
+    --backgroundImage:var('./images/cover-image-light.png');
+    --borderAndText:var(--brownColor);
+    --headerColor:var(--whiteColor);
+    --backgorundColor:var(--whiteLightColor);
+    --squareColor:var(--pinkColor);
+    --mainTextColor:var(--brownColor);
+    --miniHeadersColor:var(--brownColor);
+    --borderAndTextOpacity:var(#35343040);
+    --borderAndTextOpacity:var(--brownColorOpac)
+  }
+  .page {
+    background-image: url('../images/cover-image-light.png');
+  }
+  .rec span,
+  .rec-circle {
+    display: none;
+  } 
 }
