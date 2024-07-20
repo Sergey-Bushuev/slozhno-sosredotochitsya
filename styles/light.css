@@ -26,9 +26,8 @@
   .page {
       background-image: url('../images/cover-image-light.png');
   }
-
   .rec span,
   .rec-circle {
-      display: none;
+    display: none;
   }
 }
