@@ -4,9 +4,8 @@ body {
 
 .page {
   background-color: var(--backgorundColor);
-  background-image: url('../images/cover-image-dark.png');
   background-size: cover;
-  background-position: center;
+  background-position: top;
   background-repeat: no-repeat;
   background-attachment: fixed;
 }

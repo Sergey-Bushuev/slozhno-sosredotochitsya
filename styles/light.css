@@ -1,5 +1,5 @@
 .page.theme_light {
-  --backgroundImage: var('./images/cover-image-light.png');
+  --backgroundImage: var(url('./images/cover-image-light.png'));
   --borderAndText: var(--brownColor);
   --headerColor: var(--whiteColor);
   --backgorundColor: var(--whiteLightColor);
@@ -12,7 +12,7 @@
 
 @media (prefers-color-scheme: light) {
   :root {
-      --backgroundImage: var('./images/cover-image-light.png');
+      --backgroundImage: var(--backgroundImage:);
       --borderAndText: var(--brownColor);
       --headerColor: var(--whiteColor);
       --backgorundColor: var(--whiteLightColor);

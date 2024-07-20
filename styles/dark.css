@@ -1,9 +1,8 @@
 .page.theme_dark {
-  --backgroundImage: var('./images/cover-image-dark.png');
+  --backgroundImage: var(url('./images/cover-image-dark.png'));
   --borderAndText: var(--darkAccent);
   --headerColor: var(--darkAccentSec);
   --backgorundColor: var(--darkColor);
-  --pinkShadowColor: var();
   --squareColor: var(--darkAccent);
   --mainTextColor: var(--pinkColor);
   --miniHeadersColor: var(--darkColor);
