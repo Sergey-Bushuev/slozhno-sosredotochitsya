@@ -1,12 +1,71 @@
-/*
-  Специально для тёмной темы при наличии класса,
-  здесь окажутся стили, которые нужно переопределить принудительно,
-  переключая тему
-*/
-
 .page.theme_dark {
-  /* сохраните этот селектор в приведённом виде.
-    Так стили написанные ниже будут иметь больший вес,
-    чем стили в медиазапросе предпочтений пользователя
-  */
+  background: var(--main-color);
+}
+
+.page.theme_dark .background__container {
+  background: url('../images/cover-image-dark.png');
+  background-size: 100% 100%;
+}
+
+
+.page.theme_dark .main__screen-header {
+  color: var(--header-font);
+  text-shadow: 4px 4px var(--akcent-color);
+}
+
+.page.theme_dark .rec-circle__container {
+  border-top: 1px solid var(--akcent-color);
+  border-right: 1px solid var(--akcent-color);
+}
+
+.page.theme_dark .header__theme-menu-button_active {
+  border: 1px solid var(--akcent-color);
+}
+
+.page.theme_dark .header__theme-menu-button {
+  color: var(--akcent-color);
+}
+
+.page.theme_dark .main__screen-text,
+.page.theme_dark .main__header-text {
+  color: var(--main-color);
+  background: var(--akcent-color);
+}
+
+.page.theme_dark .questions__list-item-header {
+  color: var(--akcent-color);
+}
+
+.page.theme_dark .questions__list-blocks__list-item p {
+  color: var(--text-color)
+}
+
+.page.theme_dark .main__screen-down-square {
+  border-left: 1px solid var(--akcent-color);
+  border-bottom: 1px solid var(--akcent-color);
+}
+
+.rec {
+  color: var(--akcent-color)
+}
+
+.rec-circle {
+  background: var(--akcent-color);
+  box-shadow: 0 0 4px 2px var(--akcent-color)
+}
+
+.page.theme_dark .header__theme-menu-button:hover {
+  outline: 1px solid #ff007040
+}
+
+.page.theme_dark .header__theme-menu-button:focus {
+  border-bottom: 1px solid var(--akcent-color)
+}
+
+.page.theme_dark .link:hover {
+  border-bottom: 1px solid #F1B2CE;
+}
+
+.page.theme_dark .link:focus {
+  outline: 1px solid #F1B2CE;
 }
