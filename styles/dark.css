@@ -10,7 +10,7 @@
   --borderAndTextOpacity: var(#ff007040);
   --bodyColor:var(#000028);
   background-image: url('../images/cover-image-dark.png');
-  background-color: var(--darkColor);
+
 }
 
 @media (prefers-color-scheme: dark) {
@@ -27,7 +27,7 @@
 
   .page {
       background-image: url('../images/cover-image-dark.png');
-      background-color: var(--darkColor);
+      
   }
 
 }
