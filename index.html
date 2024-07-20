@@ -5,47 +5,48 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="color-scheme" content="dark light" />
     <title>Сложно сосредоточиться</title>
+    <link rel="stylesheet" href="./fonts/fonts.css">
     <link rel="stylesheet" href="./styles/globals.css">
     <link rel="stylesheet" href="./styles/variables.css">
-    <link rel="stylesheet" href="./fonts/fonts.css">
     <link rel="stylesheet" href="./styles/style.css">
     <link rel="stylesheet" href="./styles/dark.css">
     <link rel="stylesheet" href="./styles/light.css">
 </head>
 
 <body class="page">
-    <div class="background__container">
-        <div class="container">
-            <header class="header decorated-zone">
-                <nav class="header__theme-menu">
-                    <ul class="header__theme-menu-list">
-                        <li class="header__theme-menu-item">
-                            <button class="header__theme-menu-button header__theme-menu-button_type_light">
-                                День
-                            </button>
-                        </li>
-                        <li class="header__theme-menu-item">
-                            <button class="header__theme-menu-button header__theme-menu-button_active header__theme-menu-button_type_auto" disabled>
-                                Авто
-                            </button>
-                        </li>
-                        <li class="header__theme-menu-item">
-                            <button class="header__theme-menu-button header__theme-menu-button_type_dark">
-                                Неон
-                            </button>
-                        </li>
-                    </ul>
+    <header class="header decorated-zone">
 
-                </nav>
-                <div class="rec">
-                    <span>REC</span>
-                    <div class="rec-circle__container">
-                        <div class="rec-circle"></div>
-                    </div>
+        <section class="header__content">
+            <nav class="header__theme-menu">
+                <ul class="header__theme-menu-list">
+                    <li class="header__theme-menu-item">
+                        <button class="header__theme-menu-button header__theme-menu-button_active header__theme-menu-button_type_light">
+                            День
+                        </button>
+                    </li>
+                    <li class="header__theme-menu-item">
+                        <button class="header__theme-menu-button header__theme-menu-button_type_auto" disabled>
+                            Авто
+                        </button>
+                    </li>
+                    <li class="header__theme-menu-item">
+                        <button class="header__theme-menu-button header__theme-menu-button_type_dark">
+                            Неон
+                        </button>
+                    </li>
+                </ul>
+
+            </nav>
+            <div class="rec">
+                <span>REC</span>
+                <div class="rec-circle__container">
+                    <div class="rec-circle"></div>
                 </div>
-            </header>
-        </div>
+            </div>
+        </section>
+
         <section class="main__screen">
             <h1 class="main__screen-header">no focus</h1>
             <p class="main__screen-text">Что делать, когда не можешь делать ничего
@@ -55,7 +56,11 @@
         </section>
 
 
-    </div>
+    </header>
+
+
+
+
 
     <main class="main">
         <div class="container">
@@ -150,13 +155,17 @@
                 </ul>
 
             </section>
-            <section class="main__down">
-                <div class="main__down-square top"></div>
-                <h2 class="main__screen-header">focus</h2>
-                <div class="main__down-square down"></div>
-            </section>
+
         </div>
     </main>
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-square top"></div>
+            <h2 class="main__screen-header">focus</h2>
+            <div class="footer-square down"></div>
+        </div>
+
+    </footer>
     <script src="./scripts/script.js"></script>
 </body>
 

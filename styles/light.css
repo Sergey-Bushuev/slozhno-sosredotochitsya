@@ -7,7 +7,7 @@
   display: none;
 }
 
-.page.theme_light .background__container {
+.page.theme_light .header {
   background: url('../images/cover-image-light.png');
   background-size: 100% 100%;
 }
@@ -49,12 +49,12 @@
   border-bottom: 1px solid var(--dark-color);
 }
 
-.main__down-square.top {
+.footer-square.top {
   border-top: 1px solid var(--dark-color);
   border-right: 1px solid var(--dark-color);
 }
 
-.main__down-square.down {
+.footer-square.down {
   border-bottom: 1px solid var(--dark-color);
   border-left: 1px solid var(--dark-color);
 
