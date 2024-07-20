@@ -56,6 +56,7 @@ body {
   border-radius: 50%;
   background: var(--borderAndText);
   display: var(--isRecVisible);
+  display: flex;
 }
 
 .header__content .container {
@@ -70,12 +71,13 @@ body {
   align-items: center;
   border-top: 1px solid var(--borderAndText);
   border-right: 1px solid var(--borderAndText);
-  margin-left: 20px;
+  margin-left: 3px;
+  display: flex;
 }
 
 .header__theme-menu-list {
   display: flex;
-  gap: 11px;
+  gap: 10.7px;
 }
 
 .header__theme-menu-button {
@@ -249,7 +251,7 @@ body {
   grid-row-start: 1;
   grid-row-end: 4;
   background-image: url(../images/ice-cream.png);
-  height: 600px;
+  height: 596px;
 }
 
 .pictures__list-item:nth-child(3) {
@@ -281,7 +283,6 @@ body {
 }
 
 .footer .container {
-  height: 767px;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -304,6 +305,11 @@ body {
   border-bottom: 1px solid var(--borderAndText);
   border-left: 1px solid var(--borderAndText);
   margin: 0 auto 20px 0
+}
+
+.page.theme_light .rec span,
+.page.theme_light .rec-circle {
+  display: none;
 }
 
 @media (max-width:1023px) {

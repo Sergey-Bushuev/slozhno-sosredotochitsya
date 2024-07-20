@@ -8,9 +8,6 @@
   --mainTextColor: var(--pinkColor);
   --miniHeadersColor: var(--darkColor);
   --borderAndTextOpacity: var(#ff007040);
-}
-
-.page.theme_dark {
   background-image: url('../images/cover-image-dark.png');
 }
 

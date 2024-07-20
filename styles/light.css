@@ -7,15 +7,7 @@
   --mainTextColor: var(--brownColor);
   --miniHeadersColor: var(--brownColor);
   --borderAndTextOpacity: var(#35343040);
-}
-
-.page.theme_light {
   background-image: url('../images/cover-image-light.png');
-}
-
-.page.theme_light .rec span,
-.rec-circle {
-  display: none;
 }
 
 @media (prefers-color-scheme: light) {
