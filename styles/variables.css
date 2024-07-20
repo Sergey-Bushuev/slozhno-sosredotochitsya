@@ -18,5 +18,5 @@
   --squareColor:var(--darkAccent, --pinkColor);
   --mainTextColor:var(--pinkColor, --brownColor);
   --miniHeadersColor:var(--darkColor, --brownColor);
-  --borderAndTextOpacity:var(--darkAccentOpac, --brownColorOpac)
+  --borderAndTextOpacity:var(--darkAccentOpac, --brownColorOpac);
 }

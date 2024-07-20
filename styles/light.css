@@ -1,16 +1,18 @@
 .page.theme_light {
-    --backgroundImage:var('./images/cover-image-light.png');
-    --borderAndText:var(--brownColor);
-    --headerColor:var(--whiteColor);
-    --backgorundColor:var(--whiteLightColor);
-    --squareColor:var(--pinkColor);
-    --mainTextColor:var(--brownColor);
-    --miniHeadersColor:var(--brownColor);
-    --borderAndTextOpacity:var(#35343040)
+  --backgroundImage: var('./images/cover-image-light.png');
+  --borderAndText: var(--brownColor);
+  --headerColor: var(--whiteColor);
+  --backgorundColor: var(--whiteLightColor);
+  --squareColor: var(--pinkColor);
+  --mainTextColor: var(--brownColor);
+  --miniHeadersColor: var(--brownColor);
+  --borderAndTextOpacity: var(#35343040);
 }
+
 .page.theme_light {
   background-image: url('../images/cover-image-light.png');
 }
+
 .page.theme_light .rec span,
 .rec-circle {
   display: none;
@@ -18,21 +20,23 @@
 
 @media (prefers-color-scheme: light) {
   :root {
-    --backgroundImage:var('./images/cover-image-light.png');
-    --borderAndText:var(--brownColor);
-    --headerColor:var(--whiteColor);
-    --backgorundColor:var(--whiteLightColor);
-    --squareColor:var(--pinkColor);
-    --mainTextColor:var(--brownColor);
-    --miniHeadersColor:var(--brownColor);
-    --borderAndTextOpacity:var(#35343040);
-    --borderAndTextOpacity:var(--brownColorOpac)
+      --backgroundImage: var('./images/cover-image-light.png');
+      --borderAndText: var(--brownColor);
+      --headerColor: var(--whiteColor);
+      --backgorundColor: var(--whiteLightColor);
+      --squareColor: var(--pinkColor);
+      --mainTextColor: var(--brownColor);
+      --miniHeadersColor: var(--brownColor);
+      --borderAndTextOpacity: var(#35343040);
+      --borderAndTextOpacity: var(--brownColorOpac);
   }
+
   .page {
-    background-image: url('../images/cover-image-light.png');
+      background-image: url('../images/cover-image-light.png');
   }
+
   .rec span,
   .rec-circle {
-    display: none;
-  } 
+      display: none;
+  }
 }
