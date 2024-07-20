@@ -7,6 +7,7 @@
   --mainTextColor: var(--brownColor);
   --miniHeadersColor: var(--brownColor);
   --borderAndTextOpacity: var(#35343040);
+  --bodyColor:var(#FFF1F7);
   background-image: url('../images/cover-image-light.png');
 }
 
@@ -21,6 +22,7 @@
       --miniHeadersColor: var(--brownColor);
       --borderAndTextOpacity: var(#35343040);
       --borderAndTextOpacity: var(--brownColorOpac);
+      --bodyColor:var(#000028);
   }
 
   .page {
