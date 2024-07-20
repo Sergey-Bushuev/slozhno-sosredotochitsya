@@ -1,11 +1,6 @@
 .page {
-  background: var(--backgorundColor);
-
-  background-image: url('../images/cover-image-dark.png');
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
   background-attachment: fixed;
+  background: var(--backgorundColor);
 }
 
 body {
@@ -20,6 +15,10 @@ body {
 }
 
 .header {
+  background-image: url('../images/cover-image-dark.png');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
   padding-top: 20px;
   
   background-size: 100% 100%;

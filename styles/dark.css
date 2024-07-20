@@ -9,6 +9,10 @@
   --miniHeadersColor: var(--darkColor);
   --borderAndTextOpacity: var(#ff007040);
   --bodyColor:var(#000028);
+  
+}
+
+.page.theme_dark .header {
   background-image: url('../images/cover-image-dark.png');
 }
 
@@ -23,9 +27,9 @@
       --borderAndTextOpacity: var(--darkAccentOpac);
       --bodyColor:var(#000028);
   }
-
-  .page {
-      background-image: url('../images/cover-image-dark.png');
+  
+  .header {
+    background-image: url('../images/cover-image-dark.png');
   }
 
 }

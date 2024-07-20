@@ -9,10 +9,11 @@
   --whiteLightColor:#FFF1F7;
   --darkAccentOpac:#ff007030;
   --brownColorOpac:#35343030;
+  --pinkHeader:#ffc2e6;
 
   --backgroundImage:var('./images/cover-image-dark.png', './images/cover-image-light.png');
   --borderAndText:var(--darkAccent, --brownColor);
-  --headerColor:var(--darkAccentSec, --whiteColor);
+  --headerColor:var(--darkAccentSec, --pinkHeader);
   --backgorundColor:var(--darkColor, --whiteLightColor);
   --squareColor:var(--darkAccent, --pinkColor);
   --mainTextColor:var(--pinkColor, --brownColor);
