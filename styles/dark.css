@@ -9,11 +9,8 @@
   --miniHeadersColor: var(--darkColor);
   --borderAndTextOpacity: var(#ff007040);
   --bodyColor:var(#000028);
-  
-}
-
-.page.theme_dark .header {
   background-image: url('../images/cover-image-dark.png');
+  background-color: var(--darkColor);
 }
 
 @media (prefers-color-scheme: dark) {
@@ -27,9 +24,10 @@
       --borderAndTextOpacity: var(--darkAccentOpac);
       --bodyColor:var(#000028);
   }
-  
-  .header {
-    background-image: url('../images/cover-image-dark.png');
+
+  .page {
+      background-image: url('../images/cover-image-dark.png');
+      background-color: var(--darkColor);
   }
 
 }

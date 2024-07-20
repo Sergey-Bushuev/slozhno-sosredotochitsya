@@ -8,10 +8,6 @@
   --miniHeadersColor: var(--brownColor);
   --borderAndTextOpacity: var(#35343040);
   --bodyColor:var(#FFF1F7);
-  
-}
-
-.page.theme_light .header {
   background-image: url('../images/cover-image-light.png');
 }
 
@@ -26,13 +22,12 @@
       --miniHeadersColor: var(--brownColor);
       --borderAndTextOpacity: var(#35343040);
       --borderAndTextOpacity: var(--brownColorOpac);
-      --bodyColor:var(#000028);
+      --bodyColor:var(#FFF1F7);
   }
 
-  .header {
-    background-image: url('../images/cover-image-light.png');
+  .page.theme_light .page {
+      background-image: url('../images/cover-image-light.png');
   }
-
   .rec span,
   .rec-circle {
     display: none;
