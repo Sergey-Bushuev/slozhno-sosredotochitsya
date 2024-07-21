@@ -15,7 +15,7 @@
   --headerColor:var(--darkAccentSec, --whiteColor);
   --backgorundColor:var(--darkColor, --whiteLightColor);
   --squareColor:var(--darkAccent, --pinkColor);
-  --mainTextColor:var(--pinkColor, --brownColor);
+  --mainTextColor:var(--whiteColor, --brownColor);
   --miniHeadersColor:var(--darkColor, --brownColor);
   --borderAndTextOpacity:var(--darkAccentOpac, --brownColorOpac);
 }
