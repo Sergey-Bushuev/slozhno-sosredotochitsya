@@ -8,6 +8,7 @@
   --miniHeadersColor: var(--brownColor);
   --borderAndTextOpacity: var(#35343040);
   --bodyColor:var(#FFF1F7);
+  --textShadow:var(--pinkColor);
   background-image: url('../images/cover-image-light.png');
 }
 
@@ -19,6 +20,7 @@
       --backgorundColor: var(--whiteLightColor);
       --squareColor: var(--pinkColor);
       --mainTextColor: var(--brownColor);
+      --textShadow:var(--pinkColor);
       --miniHeadersColor: var(--brownColor);
       --borderAndTextOpacity: var(#35343040);
       --borderAndTextOpacity: var(--brownColorOpac);
