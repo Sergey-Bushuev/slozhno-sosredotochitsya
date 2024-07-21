@@ -373,10 +373,9 @@ body {
       flex-direction: column;
   }
 
-  .footer,
-  .footer .container {
-      height: 1024px;
-  }
+  .footer, .footer .container {
+    height: 1014px;
+}
 
   .main__screen-header {
       font-size: 120px;
