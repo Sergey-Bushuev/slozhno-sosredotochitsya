@@ -4,7 +4,8 @@
   --darkAccentSec:#db00ff;
   --whiteColor:#f1b2ce;
   --darkColor:#000028;
-  --pinkColor:#FFC2E6;
+  --pinkColor:#FF8DCB;
+  --pinkHeader:#FFC2E6;
   --brownColor:#353430;
   --whiteLightColor:#FFF1F7;
   --darkAccentOpac:#ff007030;
@@ -12,7 +13,7 @@
 
   --backgroundImage:var('./images/cover-image-dark.png', './images/cover-image-light.png');
   --borderAndText:var(--darkAccent, --brownColor);
-  --headerColor:var(--darkAccentSec, --whiteColor);
+  --headerColor:var(--darkAccentSec, --pinkHeader);
   --backgorundColor:var(--darkColor, --whiteLightColor);
   --textShadow:var(--darkAccent, --pinkColor);
   --squareColor:var(--darkAccent, --pinkColor);

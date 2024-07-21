@@ -1,7 +1,7 @@
 .page.theme_light {
   --backgroundImage: var('./images/cover-image-light.png');
   --borderAndText: var(--brownColor);
-  --headerColor: var(--whiteColor);
+  --headerColor: var(--pinkHeader);
   --backgorundColor: var(--whiteLightColor);
   --squareColor: var(--pinkColor);
   --mainTextColor: var(--brownColor);
@@ -16,7 +16,7 @@
   :root {
       --backgroundImage: var('./images/cover-image-light.png');
       --borderAndText: var(--brownColor);
-      --headerColor: var(--whiteColor);
+      --headerColor: var(--pinkHeader);
       --backgorundColor: var(--whiteLightColor);
       --squareColor: var(--pinkColor);
       --mainTextColor: var(--brownColor);
