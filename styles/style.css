@@ -3,7 +3,7 @@ body {
 }
 
 .page {
-  background: var(--backgorundColor);
+  background-color: var(--backgorundColor);
 
   background-image: url('../images/cover-image-dark.png');
   background-size: cover;

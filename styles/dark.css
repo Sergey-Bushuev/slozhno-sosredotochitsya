@@ -9,6 +9,11 @@
   --miniHeadersColor: var(--darkColor);
   --borderAndTextOpacity: var(#ff007040);
   background-image: url('../images/cover-image-dark.png');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-color:var(--darkColor);
 }
 
 @media (prefers-color-scheme: dark) {
@@ -24,6 +29,11 @@
 
   .page {
       background-image: url('../images/cover-image-dark.png');
+      background-size: cover;
+      background-position: center;
+      background-repeat: no-repeat;
+      background-attachment: fixed;
+      background-color:var(--darkColor);
   }
 
 }
