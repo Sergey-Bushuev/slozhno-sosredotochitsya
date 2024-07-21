@@ -1,16 +1,13 @@
 .page.theme_dark {
-  --backgroundImage: var(url('./images/cover-image-dark.png'));
+  --backgroundImage: var('./images/cover-image-dark.png');
   --borderAndText: var(--darkAccent);
   --headerColor: var(--darkAccentSec);
   --backgorundColor: var(--darkColor);
+  --pinkShadowColor: var();
   --squareColor: var(--darkAccent);
   --mainTextColor: var(--whiteColor);
   --miniHeadersColor: var(--darkColor);
   --borderAndTextOpacity: var(#ff007040);
-  
-}
-
-.page.theme_dark .header {
   background-image: url('../images/cover-image-dark.png');
 }
 
@@ -25,9 +22,8 @@
       --borderAndTextOpacity: var(--darkAccentOpac);
   }
 
-  .page.theme_dark .header {
-    background-image: url(../images/cover-image-dark.png);
-    background-color: var(--backgorundColor);
-}
+  .page {
+      background-image: url('../images/cover-image-dark.png');
+  }
 
 }

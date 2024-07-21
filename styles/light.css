@@ -1,5 +1,5 @@
 .page.theme_light {
-  --backgroundImage: var(url('./images/cover-image-light.png'));
+  --backgroundImage: var('./images/cover-image-light.png');
   --borderAndText: var(--brownColor);
   --headerColor: var(--whiteColor);
   --backgorundColor: var(--whiteLightColor);
@@ -7,15 +7,12 @@
   --mainTextColor: var(--brownColor);
   --miniHeadersColor: var(--brownColor);
   --borderAndTextOpacity: var(#35343040);
-  
-}
-.page.theme_light .header {
   background-image: url('../images/cover-image-light.png');
 }
 
 @media (prefers-color-scheme: light) {
   :root {
-      --backgroundImage: var(--backgroundImage:);
+      --backgroundImage: var('./images/cover-image-light.png');
       --borderAndText: var(--brownColor);
       --headerColor: var(--whiteColor);
       --backgorundColor: var(--whiteLightColor);
@@ -26,7 +23,7 @@
       --borderAndTextOpacity: var(--brownColorOpac);
   }
 
-  .page.theme_light .header {
+  .page {
       background-image: url('../images/cover-image-light.png');
   }
   .rec span,
