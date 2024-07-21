@@ -35,7 +35,7 @@ body {
 }
 
 .link {
-  text-shadow: 2px 2px var(--darkAccent);
+  text-shadow: 2px 2px var(--textShadow);
   text-decoration: none;
 }
 
@@ -135,7 +135,7 @@ body {
 }
 
 .questions {
-  padding-top: 60px;
+  padding-top: 59px;
 }
 
 .questions__list {
@@ -379,7 +379,9 @@ body {
 
   .main__screen-header {
       font-size: 120px;
-  }
+      text-shadow: 4px 4px var(--textShadow);
+    }
+      
 
   .pictures__list {
       width: 728px;

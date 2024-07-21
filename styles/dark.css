@@ -4,6 +4,7 @@
   --headerColor: var(--darkAccentSec);
   --backgorundColor: var(--darkColor);
   --pinkShadowColor: var();
+  --textShadow:var(--darkAccent);
   --squareColor: var(--darkAccent);
   --mainTextColor: var(--whiteColor);
   --miniHeadersColor: var(--darkColor);
@@ -22,6 +23,7 @@
       --headerColor: var(--darkAccentSec);
       --backgorundColor: var(--darkColor);
       --squareColor: var(--darkAccent);
+      --textShadow:var(--darkAccent);
       --mainTextColor: var(--whiteColor);
       --miniHeadersColor: var(--darkColor);
       --borderAndTextOpacity: var(--darkAccentOpac);
