@@ -9,6 +9,7 @@
   --miniHeadersColor: var(--darkColor);
   --borderAndTextOpacity: var(#ff007040);
   --bodyColor:var(#000028);
+  --textShadow:var(--darkAccent);
   background-image: url('../images/cover-image-dark.png');
 }
 
@@ -22,6 +23,7 @@
       --miniHeadersColor: var(--darkColor);
       --borderAndTextOpacity: var(--darkAccentOpac);
       --bodyColor:var(#000028);
+      --textShadow:var(--darkAccent);
   }
 
   .page {

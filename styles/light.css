@@ -1,13 +1,14 @@
 .page.theme_light {
   --backgroundImage: var('./images/cover-image-light.png');
   --borderAndText: var(--brownColor);
-  --headerColor: var(--whiteColor);
+  --headerColor: var(--headerPink);
   --backgorundColor: var(--whiteLightColor);
   --squareColor: var(--pinkColor);
   --mainTextColor: var(--brownColor);
   --miniHeadersColor: var(--brownColor);
   --borderAndTextOpacity: var(#35343040);
   --bodyColor:var(#FFF1F7);
+  --textShadow:var(--pinkColor);
   background-image: url('../images/cover-image-light.png');
 }
 
@@ -15,7 +16,7 @@
   :root {
       --backgroundImage: var('./images/cover-image-light.png');
       --borderAndText: var(--brownColor);
-      --headerColor: var(--whiteColor);
+      --headerColor: var(--headerPink);
       --backgorundColor: var(--whiteLightColor);
       --squareColor: var(--pinkColor);
       --mainTextColor: var(--brownColor);
@@ -23,6 +24,7 @@
       --borderAndTextOpacity: var(#35343040);
       --borderAndTextOpacity: var(--brownColorOpac);
       --bodyColor:var(#000028);
+      --textShadow:var(--pinkColor);
   }
 
   .page {
