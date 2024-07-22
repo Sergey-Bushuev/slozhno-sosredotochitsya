@@ -4,17 +4,12 @@
   --headerColor: var(--darkAccentSec);
   --backgorundColor: var(--darkColor);
   --pinkShadowColor: var();
-  --textShadow:var(--darkAccent);
   --squareColor: var(--darkAccent);
   --mainTextColor: var(--whiteColor);
   --miniHeadersColor: var(--darkColor);
   --borderAndTextOpacity: var(#ff007040);
+  --bodyColor:var(#000028);
   background-image: url('../images/cover-image-dark.png');
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-attachment: fixed;
-  background-color:var(--darkColor);
 }
 
 @media (prefers-color-scheme: dark) {
@@ -23,19 +18,14 @@
       --headerColor: var(--darkAccentSec);
       --backgorundColor: var(--darkColor);
       --squareColor: var(--darkAccent);
-      --textShadow:var(--darkAccent);
       --mainTextColor: var(--whiteColor);
       --miniHeadersColor: var(--darkColor);
       --borderAndTextOpacity: var(--darkAccentOpac);
+      --bodyColor:var(#000028);
   }
 
   .page {
       background-image: url('../images/cover-image-dark.png');
-      background-size: cover;
-      background-position: center;
-      background-repeat: no-repeat;
-      background-attachment: fixed;
-      background-color:var(--darkColor);
   }
 
 }

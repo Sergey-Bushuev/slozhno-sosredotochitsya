@@ -1,15 +1,16 @@
-body {
-  font-family: 'IBM Plex Mono';
-}
-
 .page {
-  background-color: var(--backgorundColor);
+  background: var(--backgorundColor);
 
   background-image: url('../images/cover-image-dark.png');
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
   background-attachment: fixed;
+}
+
+body {
+  font-family: 'IBM Plex Mono';
+  background: var(--bodyColor);
 }
 
 .container {
@@ -19,11 +20,10 @@ body {
 }
 
 .header {
-  padding-top: 20px;
-  
   background-size: 100% 100%;
-  height: 768px;
   min-block-size: 100vh;
+  display: grid;
+  grid-template-rows: 1fr min-content 1fr;
 }
 
 .main__screen-header {
@@ -35,7 +35,7 @@ body {
 }
 
 .link {
-  text-shadow: 2px 2px var(--textShadow);
+  text-shadow: 2px 2px var(--darkAccent);
   text-decoration: none;
 }
 
@@ -47,6 +47,9 @@ body {
   text-align: center;
   align-items: center;
   color: var(--borderAndText);
+  position: absolute;
+  top:20px;
+  right:20px;
 }
 
 .rec-circle {
@@ -60,7 +63,7 @@ body {
 
 .header__content .container {
   display: flex;
-  justify-content: space-between;
+  justify-content: center
 }
 
 .rec-circle__container {
@@ -98,8 +101,7 @@ body {
 }
 
 .header__theme-menu {
-  margin-left: 50%;
-  transform: translateX(-50%);
+  margin-top:20px;
 }
 
 .header__theme-menu-item:hover {
@@ -110,20 +112,17 @@ body {
   border-bottom: 1px solid var(--borderAndText);
 }
 
-
-.main__screen {
-  padding: 273px 20px 20px 0;
-}
-
 .main__screen-text {
-  margin: 114px 0 88px;
   color: var(--miniHeadersColor);
   background: var(--squareColor);
   font-weight: 700;
   font-size: 18px;
   line-height: 130%;
   width: 491px;
-  margin-left: auto;
+  align-self: center;
+  justify-self: end;
+  margin-right: 20px;
+  margin-top: -20px;
 }
 
 .main__screen-down-square {
@@ -131,11 +130,13 @@ body {
   border-left: 1px solid var(--borderAndText);
   width: 25px;
   height: 25px;
-  margin-left: 20px;
+  position: absolute;
+  left: 20px;
+  bottom: 20px;
 }
 
 .questions {
-  padding-top: 59px;
+  padding-top: 60px;
 }
 
 .questions__list {
@@ -322,8 +323,11 @@ body {
 
 @media (max-width:1023px) {
   .main__screen-text {
-      width: 364px;
-      margin: 164px 0 139px auto;
+      width: 364px;      
+  }
+
+  .header__content {
+    align-self: center;
   }
 
   .questions {
@@ -340,14 +344,6 @@ body {
 
   .questions__list-item:nth-child(2) {
       gap: 11px;
-  }
-
-  .main__screen {
-      padding: 173px 20px 20px 0;
-  }
-
-  .header {
-      height: 1024px;
   }
 
   .header__content .container {
@@ -379,9 +375,7 @@ body {
 
   .main__screen-header {
       font-size: 120px;
-      text-shadow: 4px 4px var(--textShadow);
-    }
-      
+  }
 
   .pictures__list {
       width: 728px;
@@ -414,15 +408,20 @@ body {
       gap: 38px;
       padding-right: 10px;
   }
+  
+  .header__theme-menu {
+    margin-top: 6px;
+  }
 
-  .header {
-      height: 668px;
-      padding-top: 10px;
+  .rec {
+    right:10px;
+    top:10px;
   }
 
   .main__screen-header {
-      font-size: 116px;
-  }
+    font-size: 116px;
+    margin-left: 10px;
+  } 
 
   .container {
       padding: 0 10px;
@@ -437,17 +436,14 @@ body {
       margin-left: 10px;
   }
 
-  .main__screen {
-      padding: 65px 10px 10px 10px;
-  }
-
   .main__screen-text {
-      width: 100%;
-      margin: 59px 0 30px auto;
+    width: auto;
+    margin: -10px 10px 0;
   }
 
   .main__screen-down-square {
-      margin-left: 0;
+    left:10px;
+    bottom:10px;
   }
 
   .questions {
