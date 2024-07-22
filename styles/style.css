@@ -15,7 +15,7 @@ body {
 
 .container {
   padding: 0 20px;
-  max-width: 1024px;
+  max-width: 1440px;
   margin: 0 auto
 }
 
@@ -230,6 +230,7 @@ body {
   background-size: auto 100%;
   background-repeat: no-repeat;
   background-position: center;
+  background-size: cover;
 }
 
 .pictures .main__header-text {
@@ -368,16 +369,13 @@ body {
       flex-direction: column;
   }
 
-  .footer, .footer .container {
-    height: 1004px;
-}
+  .footer,
+  .footer .container {
+      height: 1024px;
+  }
 
   .main__screen-header {
       font-size: 120px;
-<<<<<<< HEAD
-=======
-      text-shadow: 4px 4px var(--textShadow);
->>>>>>> 7b3dc470bfb8ca69b43215bfd05884b3ec2e6e34
   }
 
   .pictures__list {
@@ -450,7 +448,7 @@ body {
   }
 
   .questions {
-      padding-top: 41.5px;
+      padding-top: 40px;
   }
 
   .questions__list-item-header {
