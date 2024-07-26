@@ -6,11 +6,7 @@
   background-position: center;
   background-repeat: no-repeat;
   background-attachment: fixed;
-}
-
-body {
-  font-family: 'IBM Plex Mono';
-  background: var(--bodyColor);
+  font-family: 'IBM Plex Mono', monospace;
 }
 
 .container {
@@ -49,8 +45,8 @@ body {
   align-items: center;
   color: var(--borderAndText);
   position: absolute;
-  top:20px;
-  right:20px;
+  top: 20px;
+  right: 20px;
 }
 
 .rec-circle {
@@ -60,6 +56,17 @@ body {
   border-radius: 50%;
   background: var(--borderAndText);
   display: flex;
+}
+
+.header__content::after {
+  content: ' ';
+  border-bottom: 1px solid var(--borderAndText);
+  border-left: 1px solid var(--borderAndText);
+  width: 25px;
+  height: 25px;
+  position: absolute;
+  left: 20px;
+  bottom: 20px;
 }
 
 .header__content .container {
@@ -102,15 +109,19 @@ body {
 }
 
 .header__theme-menu {
-  margin-top:20px;
+  margin-top: 20px;
+}
+
+.header__theme-menu-item {
+  border-bottom: 1px solid #00000000;
 }
 
 .header__theme-menu-item:hover {
-  outline: 1px solid var(--borderAndTextOpacity);
+  outline: 1px solid var(--borderAndText);
 }
 
 .header__theme-menu-item:focus {
-  border-bottom: 1px solid var(--borderAndText);
+  border-bottom: 1px solid var(--borderAndTextOpacity);
 }
 
 .main__screen-text {
@@ -126,62 +137,58 @@ body {
   margin-top: -20px;
 }
 
-.main__screen-down-square {
-  border-bottom: 1px solid var(--borderAndText);
-  border-left: 1px solid var(--borderAndText);
-  width: 25px;
-  height: 25px;
-  position: absolute;
-  left: 20px;
-  bottom: 20px;
-}
-
-.questions {
+.section {
   padding-top: 60px;
 }
 
-.questions__list {
+.section__list {
   display: flex;
   flex-direction: column;
   gap: 80px;
 }
 
-.questions__list-item:nth-child(1) {
+.section__list-item.first {
   display: grid;
   grid-template-columns: 1fr 2fr;
 }
 
-.questions__list-item:nth-child(2) {
+.section__list-item.second {
   display: flex;
   flex-direction: column;
 }
 
-.questions__list-item:nth-child(2) .questions__list-blocks__list {
+.section__list-item.second .section__list-blocks__list {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
 }
 
-.questions__list-item-header {
+.section__list-item-header {
   width: 315px;
   margin-bottom: 10px;
   font-weight: 700;
   font-size: 18px;
   line-height: 130%;
-  color:var(--borderAndText);
+  color: var(--borderAndText);
 }
 
-.questions__list-item:nth-child(3) {
+.section__list-item:nth-child(3) {
   display: grid;
   grid-template-columns: 1fr 2fr;
 }
 
-.questions__list-blocks__list-item {
+.section__list-item__left-container {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.section__list-blocks__list-item {
   display: flex;
   flex-direction: column;
   gap: 10px;
 }
 
-.questions__list-item {
+.section__list-item {
   gap: 10px;
 }
 
@@ -199,7 +206,7 @@ body {
   font-weight: 400;
 }
 
-.questions__list-blocks__list-item p {
+.section__list-blocks__list-item p {
   font-weight: 400;
   font-size: 18px;
   line-height: 130%;
@@ -207,7 +214,7 @@ body {
 
 }
 
-.questions__list-blocks__list {
+.section__list-blocks__list {
   display: flex;
   flex-direction: column;
   gap: 20px;
@@ -228,10 +235,11 @@ body {
 }
 
 .pictures__list-item {
-  background-size: auto 100%;
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: cover;
+  block-size: 100%;
+  inline-size: 100%;
+  display: block;
+  object-fit: cover;
+  object-position: center;
 }
 
 .pictures .main__header-text {
@@ -307,15 +315,15 @@ body {
   border-right: 1px solid var(--borderAndText);
   position: absolute;
   right: 20px;
-  top:20px;
+  top: 20px;
 }
 
 .footer-square.down {
   border-bottom: 1px solid var(--borderAndText);
   border-left: 1px solid var(--borderAndText);
   position: absolute;
-  left:20px;
-  bottom:20px;
+  left: 20px;
+  bottom: 20px;
 }
 
 .page.theme_light .rec span,
@@ -330,26 +338,26 @@ body {
 
 @media (max-width:1023px) {
   .main__screen-text {
-      width: 364px;      
+      width: 364px;
   }
 
   .header__content {
-    align-self: center;
+      align-self: center;
   }
 
-  .questions {
-    padding-top: 59.8px;
+  .section {
+      padding-top: 59.8px;
   }
 
-  .questions__list-item-header {
+  .section__list-item-header {
       width: 237px;
   }
 
-  .questions__list-item {
+  .section__list-item {
       gap: 18px;
   }
 
-  .questions__list-item:nth-child(2) {
+  .section__list-item.second {
       gap: 11px;
   }
 
@@ -370,7 +378,7 @@ body {
       align-items: end;
   }
 
-  .questions__list-item:nth-child(2) .questions__list-blocks__list {
+  .section__list-item.second .section__list-blocks__list {
       display: flex;
       flex-direction: column;
   }
@@ -398,9 +406,9 @@ body {
   .pictures__list-item:nth-child(5) {
       height: 318px;
   }
-  
+
   .main__screen-header {
-    text-shadow: 4px 4px var(--textShadow);
+      text-shadow: 4px 4px var(--textShadow);
   }
 }
 
@@ -409,20 +417,20 @@ body {
       gap: 38px;
       padding-right: 10px;
   }
-  
+
   .header__theme-menu {
-    margin-top: 6px;
+      margin-top: 6px;
   }
 
   .rec {
-    right:10px;
-    top:10px;
+      right: 10px;
+      top: 10px;
   }
 
   .main__screen-header {
-    font-size: 116px;
-    margin-left: 10px;
-  } 
+      font-size: 116px;
+      margin-left: 10px;
+  }
 
   .container {
       padding: 0 10px;
@@ -438,38 +446,38 @@ body {
   }
 
   .main__screen-text {
-    width: auto;
-    margin: -10px 10px 0;
+      width: auto;
+      margin: -10px 10px 0;
   }
 
   .main__screen-down-square {
-    left:10px;
-    bottom:10px;
+      left: 10px;
+      bottom: 10px;
   }
 
-  .questions {
+  .section {
       padding-top: 40px;
   }
 
-  .questions__list-item-header {
+  .section__list-item-header {
       width: 100%;
       margin-bottom: 0;
   }
 
-  .questions__list-item:nth-child(2) .questions__list-item-header {
+  .section__list-item.second .section__list-item-header {
       margin-bottom: 10px;
   }
 
-  .questions__list {
+  .section__list {
       gap: 50px;
       width: auto;
   }
 
-  .questions__list-item:nth-child(1) {
+  .section__list-item.second {
       grid-template-columns: 1fr;
   }
 
-  .questions__list-item:nth-child(3) {
+  .section__list-item.third {
       grid-template-columns: 1fr;
   }
 
@@ -512,11 +520,12 @@ body {
   }
 
   .footer-square.down {
-    left:10px;
-    bottom:10px;
+      left: 10px;
+      bottom: 10px;
   }
+
   .footer-square.top {
-    right: 10px;
-    top:10px;
+      right: 10px;
+      top: 10px;
   }
 }
