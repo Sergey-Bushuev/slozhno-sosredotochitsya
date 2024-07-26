@@ -385,6 +385,7 @@
 
   .main__screen-header {
       font-size: 120px;
+      text-shadow: 4px 4px var(--textShadow);
   }
 
   .pictures__list-item:nth-child(1) {
@@ -405,10 +406,6 @@
 
   .pictures__list-item:nth-child(5) {
       height: 318px;
-  }
-
-  .main__screen-header {
-      text-shadow: 4px 4px var(--textShadow);
   }
 }
 
