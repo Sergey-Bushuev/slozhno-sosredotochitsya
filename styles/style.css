@@ -515,6 +515,10 @@
       height: 237px;
   }
 
+  .section__list-item.first {
+    grid-template-columns: 1fr;
+  }
+
   .pictures__list-item {
       background-size: 100%;
   }
@@ -527,5 +531,11 @@
   .footer-square.top {
       right: 10px;
       top: 10px;
+  }
+  .footer {
+    margin-top: 41px;
+  }
+  .footer .main__screen-header {
+    margin-left: 0;
   }
 }
