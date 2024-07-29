@@ -436,6 +436,11 @@
       padding: 0 10px;
   }
 
+  .header__content::after {
+    bottom: 10px;
+    left:10px;
+  }
+
   .main__screen .main__screen-header {
       text-wrap: wrap;
       width: 100px;
