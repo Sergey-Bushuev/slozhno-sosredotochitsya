@@ -1,33 +1,33 @@
 .page.theme_dark {
-  --backgroundImage: var('./images/cover-image-dark.png');
-  --borderAndText: var(--darkAccent);
-  --headerColor: var(--darkAccentSec);
-  --backgorundColor: var(--darkColor);
-  --pinkShadowColor: var();
-  --squareColor: var(--darkAccent);
-  --mainTextColor: var(--whiteColor);
-  --miniHeadersColor: var(--darkColor);
-  --borderAndTextOpacity: var(#ff007040);
-  --bodyColor:var(#000028);
-  --textShadow:var(--darkAccent);
+  --background-image: url('./images/cover-image-dark.png');
+  --border-and-text: var(--color-dark-accent);
+  --header-color: var(--color-dark-accent-sec);
+  --background-color: var(--color-dark);
+  --square-color: var(--color-dark-accent);
+  --main-text-color: var(--color-white);
+  --mini-headers-color: var(--color-dark);
+  --border-and-text-opacity: var(--color-dark-accent-opac);
+  --body-color: var(--color-dark);
+  --text-shadow: var(--color-dark-accent);
+  
   background-image: url('../images/cover-image-dark.png');
 }
 
 @media (prefers-color-scheme: dark) {
   :root {
-      --borderAndText: var(--darkAccent);
-      --headerColor: var(--darkAccentSec);
-      --backgorundColor: var(--darkColor);
-      --squareColor: var(--darkAccent);
-      --mainTextColor: var(--whiteColor);
-      --miniHeadersColor: var(--darkColor);
-      --borderAndTextOpacity: var(--darkAccentOpac);
-      --bodyColor:var(#000028);
-      --textShadow:var(--darkAccent);
+    --background-image: url('./images/cover-image-dark.png');
+    --border-and-text: var(--color-dark-accent);
+    --header-color: var(--color-dark-accent-sec);
+    --background-color: var(--color-dark);
+    --square-color: var(--color-dark-accent);
+    --main-text-color: var(--color-white);
+    --mini-headers-color: var(--color-dark);
+    --border-and-text-opacity: var(--color-dark-accent-opac);
+    --body-color: var(--color-dark);
+    --text-shadow: var(--color-dark-accent);
   }
 
   .page {
-      background-image: url('../images/cover-image-dark.png');
+    background-image: url('../images/cover-image-dark.png');
   }
-
 }

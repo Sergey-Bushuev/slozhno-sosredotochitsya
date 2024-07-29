@@ -1,24 +1,23 @@
-
 :root {
-  --darkAccent:#ff0070;
-  --darkAccentSec:#db00ff;
-  --whiteColor:#f1b2ce;
-  --darkColor:#000028;
-  --headerPink:#FFC2E6;
-  --pinkColor:#FF8DCB;
-  --brownColor:#353430;
-  --whiteLightColor:#FFF1F7;
-  --darkAccentOpac:#ff007030;
-  --brownColorOpac:#35343030;
+  --color-dark-accent: #ff0070;
+  --color-dark-accent-sec: #db00ff;
+  --color-white: #f1b2ce;
+  --color-dark: #000028;
+  --color-header-pink: #FFC2E6;
+  --color-pink: #FF8DCB;
+  --color-brown: #353430;
+  --color-white-light: #FFF1F7;
+  --color-dark-accent-opac: #ff007030;
+  --color-brown-opac: #35343030;
 
-  --backgroundImage:var('./images/cover-image-dark.png');
-  --borderAndText:var(--darkAccent);
-  --headerColor:var(--darkAccentSec);
-  --backgorundColor:var(--darkColor);
-  --textShadow:var(--darkAccent);
-  --squareColor:var(--darkAccent);
-  --mainTextColor:var(--whiteColor);
-  --miniHeadersColor:var(--darkColor);
-  --borderAndTextOpacity:var(--darkAccentOpac);
-  --bodyColor:var(#000028);
+  --background-image: url('./images/cover-image-dark.png');
+  --border-and-text: var(--color-dark-accent);
+  --header-color: var(--color-dark-accent-sec);
+  --background-color: var(--color-dark);
+  --text-shadow: var(--color-dark-accent);
+  --square-color: var(--color-dark-accent);
+  --main-text-color: var(--color-white);
+  --mini-headers-color: var(--color-dark);
+  --border-and-text-opacity: var(--color-dark-accent-opac);
+  --body-color: var(--color-dark);
 }

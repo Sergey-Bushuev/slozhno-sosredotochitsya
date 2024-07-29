@@ -1,34 +1,36 @@
 .page.theme_light {
-  --backgroundImage: var('./images/cover-image-light.png');
-  --borderAndText: var(--brownColor);
-  --headerColor: var(--headerPink);
-  --backgorundColor: var(--whiteLightColor);
-  --squareColor: var(--pinkColor);
-  --mainTextColor: var(--brownColor);
-  --miniHeadersColor: var(--brownColor);
-  --borderAndTextOpacity: var(#35343040);
-  --bodyColor:var(#FFF1F7);
-  --textShadow:var(--pinkColor);
+  --background-image: url('./images/cover-image-light.png');
+  --border-and-text: var(--color-brown);
+  --header-color: var(--color-header-pink);
+  --background-color: var(--color-white-light);
+  --square-color: var(--color-pink);
+  --main-text-color: var(--color-brown);
+  --mini-headers-color: var(--color-brown);
+  --border-and-text-opacity: var(--color-brown-opac);
+  --body-color: var(--color-white-light);
+  --text-shadow: var(--color-pink);
+  
   background-image: url('../images/cover-image-light.png');
 }
 
 @media (prefers-color-scheme: light) {
   :root {
-      --backgroundImage: var('./images/cover-image-light.png');
-      --borderAndText: var(--brownColor);
-      --headerColor: var(--headerPink);
-      --backgorundColor: var(--whiteLightColor);
-      --squareColor: var(--pinkColor);
-      --mainTextColor: var(--brownColor);
-      --miniHeadersColor: var(--brownColor);
-      --borderAndTextOpacity: var(#35343040);
-      --bodyColor:var(#000028);
-      --textShadow:var(--pinkColor);
+    --background-image: url('./images/cover-image-light.png');
+    --border-and-text: var(--color-brown);
+    --header-color: var(--color-header-pink);
+    --background-color: var(--color-white-light);
+    --square-color: var(--color-pink);
+    --main-text-color: var(--color-brown);
+    --mini-headers-color: var(--color-brown);
+    --border-and-text-opacity: var(--color-brown-opac);
+    --body-color: var(--color-white-light);
+    --text-shadow: var(--color-pink);
   }
 
   .page {
-      background-image: url('../images/cover-image-light.png');
+    background-image: url('../images/cover-image-light.png');
   }
+  
   .rec span,
   .rec-circle {
     display: none;
