@@ -31,3 +31,8 @@
     background-image: url('../images/cover-image-dark.png');
   }
 }
+
+.page.theme_dark .rec span,
+.page.theme_dark .rec-circle {
+  display: flex;
+}

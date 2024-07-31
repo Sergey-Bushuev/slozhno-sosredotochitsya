@@ -36,3 +36,8 @@
     display: none;
   }
 }
+
+.page.theme_light .rec span,
+.page.theme_light .rec-circle {
+  display: none;
+}
