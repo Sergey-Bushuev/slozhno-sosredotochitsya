@@ -32,7 +32,6 @@
   }
 }
 
-.page.theme_dark .rec span,
-.page.theme_dark .rec-circle {
-  display: flex;
+.page.theme_dark .rec {
+  visibility: visible;
 }

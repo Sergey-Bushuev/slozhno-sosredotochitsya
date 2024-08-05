@@ -31,13 +31,11 @@
     background-image: url('../images/cover-image-light.png');
   }
   
-  .rec span,
-  .rec-circle {
-    display: none;
+  .rec {
+    visibility: hidden;
   }
 }
 
-.page.theme_light .rec span,
-.page.theme_light .rec-circle {
-  display: none;
+.page.theme_light .rec {
+  visibility: hidden;
 }

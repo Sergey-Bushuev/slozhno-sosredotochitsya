@@ -16,13 +16,14 @@
 
 .header {
   background-size: 100% 100%;
-  min-block-size: 100vh;
+  block-size: 100vh;
+  min-height: 668px;
   display: grid;
   grid-template-rows: 1fr min-content 1fr;
   position: relative;
 }
 
-.main__screen-header {
+.page-title {
   font-weight: 700;
   font-size: 157px;
   line-height: 83%;
@@ -30,31 +31,34 @@
   text-shadow: 4px 4px var(--color-dark-accent);
 }
 
+
 .link {
   text-shadow: 2px 2px var(--text-shadow);
   text-decoration: none;
 }
 
 .rec {
-  display: flex;
-  font-weight: 400;
-  font-size: 18px;
-  line-height: 139%;
-  text-align: center;
-  align-items: center;
-  color: var(--border-and-text);
   position: absolute;
-  top: 20px;
   right: 20px;
+  top: 20px;
 }
 
-.rec-circle {
-  width: 9px;
-  height: 9px;
-  box-shadow: 0 0 4px 2px var(--border-and-text);
+.rec::before {
+  content: "REC";
+  color: var(--accent-color, #ff0070);
+  line-height: 24px;
+  margin-right:1px;
+}
+
+.rec::after {
+  content: "";
+  display: inline-block;
   border-radius: 50%;
-  background: var(--border-and-text);
-  display: flex;
+  box-shadow: 0 0 2px 2px var(--accent-color, #ff0070);
+  background: var(--accent-color, #ff0070);
+  inline-size: 9px;
+  block-size: 9px;
+  margin-right:10px;
 }
 
 .header__content::after {
@@ -71,6 +75,17 @@
 .header__content .container {
   display: flex;
   justify-content: center
+}
+
+.header__content::before {
+  content: ' ';
+  border-top: 1px solid var(--border-and-text);
+  border-right: 1px solid var(--border-and-text);
+  width: 25px;
+  height: 25px;
+  position: absolute;
+  right: 20px;
+  top: 20px;
 }
 
 .rec-circle__container {
@@ -91,7 +106,7 @@
 
 .header__theme-menu-button {
   background: none;
-  border: none;
+  border: 1px solid #00000000;
   cursor: pointer;
   color: var(--border-and-text);
   text-transform: lowercase;
@@ -115,19 +130,19 @@
   border-bottom: 1px solid #00000000;
 }
 
-.header__theme-menu-item:hover {
+.header__theme-menu-button:hover {
   outline: 1px solid var(--border-and-text);
 }
 
-.header__theme-menu-item:focus {
+.header__theme-menu-item:focus-visible {
   border-bottom: 1px solid var(--border-and-text);
 }
 
-.link:hover {
+.link:focus-visible {
   outline: 1px solid var(--main-text-color);
 }
 
-.link:focus {
+.link:hover {
   border-bottom: 1px solid var(--main-text-color);
 }
 
@@ -300,6 +315,7 @@
   flex-direction: column;
   height: 100vh;
   position: relative;
+  min-height: 668px;
 }
 
 .footer-header {
@@ -374,7 +390,7 @@
       flex-direction: column;
   }
 
-  .main__screen-header {
+  .page-title {
       font-size: 120px;
       text-shadow: 4px 4px var(--text-shadow);
   }
@@ -416,7 +432,7 @@
       top: 10px;
   }
 
-  .main__screen-header {
+  .page-title {
       font-size: 116px;
       margin-left: 10px;
   }
@@ -430,7 +446,7 @@
     left:10px;
   }
 
-  .main__screen .main__screen-header {
+  .main__screen .page-title {
       text-wrap: wrap;
       width: 100px;
   }
@@ -527,8 +543,18 @@
     margin-top: 41px;
   }
 
-  .footer .main__screen-header {
+  .footer .page-title {
     margin-left: 0;
+  }
+
+  .header__content::before {
+    right: 10px;
+    top: 10px;
+  }
+
+  .header__content::before {
+    right: 10px;
+    top: 10px;
   }
 
 }
