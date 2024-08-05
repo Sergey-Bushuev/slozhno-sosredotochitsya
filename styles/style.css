@@ -552,9 +552,4 @@
     top: 10px;
   }
 
-  .header__content::before {
-    right: 10px;
-    top: 10px;
-  }
-
 }
